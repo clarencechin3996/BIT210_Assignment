@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>GetVax - Record New Vaccination Batch</title>
+  <style>
+    .btn2 {
+      border: none;
+      outline-color: none;
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn2:hover {
+      background: white;
+      border: 1px solid;
+      color: black;
+    }
+  </style>
+  <title>GetVax - Request Vaccination Appointment</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo_text">
+        <!-- class="logo_colour", allows you to change the colour of the text -->
+        <h1><a href="home.html">Get<span class="logo_colour">Vax</span></a></h1>
+        <h2>Healthcare. Service. Public.</h2>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 20px;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="homePatient.html" style="font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link active" href="requestVaccinationAppointment.html">Vaccination Appointment</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="login.html" style="text-decoration: none; margin-right: 30px;"> | Log Out</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <!-- insert the page content here -->
+      <h1>Request Vaccination Appointment</h1>
+      <div class="form-row">
+        <div class="col-lg-7">
+          <label for="chooseVaccine">Choose the vaccine you would like to get:</label>
+          <select id="vaccineList" name="vaccineList">
+            <option value="AstraZeneca">AstraZeneca</option>
+            <option value="Pfizer">Pfizer</option>
+            <option value="Moderna">Moderna</option>
+            <option value="Sputnik V">Sputnik V</option>
+            <option value="Sinovac">Sinovac</option>
+            <option value="Johnson&Johnson">Johnson & Johnson</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-lg-7">
+          <label for="healthcareCenters">Choose a Healthcare Center:</label>
+          <select id="healthcareCenters" name="healthcareCenters">
+            <option value="ParkCityMedicalCenter">Park City Medical Center</option>
+            <option value="HomageHomeCareMalaysia">Homage Home Care Malaysia</option>
+            <option value="HBMFamilyClinic">HBM Family Clinic</option>
+            <option value="UiTMPrivateSpecialistCenter">UiTM Private Specialist Center</option>
+            <option value="PantaiHospitalKualaLumpur">Pantai Hospital Kuala Lumpur</option>
+            <option value="HSCMedicalCenter">HSC Medical Center</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-lg-7">
+          <label for="healthcareCenters">Select Batch Number:</label>
+          <select id="healthcareCenters" name="healthcareCenters">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-lg-7">
+          <label for="test">Select Appointment Date:</label>
+          <input type="date" placeholder="Expiry Date" class="form-control my-2 p-3">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-lg-7">
+          <button type="button" class="btn2 mt-3 mb-5">Make New Appointment</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
